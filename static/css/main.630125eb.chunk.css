@@ -1,0 +1,2 @@
+*{margin:0;padding:0;box-sizing:border-box}header{background-color:#7b7b7b;display:flex;justify-content:space-between;align-items:center;height:10vh}header h1{margin-left:1.2rem;font-size:3rem;color:#a8e7e9}header li{display:inline-block;margin:auto .5rem;font-size:1.5rem;color:#a8e7e9}header a{color:#a8e7e9;text-decoration:none;font-size:2rem}header li:after{content:" | "}
+/*# sourceMappingURL=main.630125eb.chunk.css.map */
