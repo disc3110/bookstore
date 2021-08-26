@@ -5,11 +5,11 @@ import { removeBook } from '../redux/books/books';
 
 const Book = (props) => {
   // eslint-disable-next-line camelcase
-  const { item_id, title, author } = props;
+  const { item_id, title, category } = props;
   Book.propTypes = {
     item_id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    author: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
   };
   const dispatch = useDispatch();
   const deleteBookFromStore = () => {
@@ -20,9 +20,11 @@ const Book = (props) => {
       <td>
         {title}
         {' '}
-        by
+        of
         {' '}
-        {author}
+        {category}
+        {' '}
+        category
       </td>
       <td><button type="submit" className="btn btn-sm btn-danger" data-id="0" onClick={deleteBookFromStore}>Remove</button></td>
     </tr>
