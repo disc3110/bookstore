@@ -1,0 +1,8 @@
+.book-collection {
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 3rem;
+  max-width: 80vw;
+  margin-top: 7.5rem;
+  display: flex;
+  flex-direction: column;
+}

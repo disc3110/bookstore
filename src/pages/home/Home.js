@@ -3,9 +3,9 @@ import CreateNewBook from '../../components/CreateBook';
 import ListOfBooks from '../../components/ListOfBooks';
 
 const Home = () => (
-  <div>
-    <CreateNewBook />
+  <div className="container">
     <ListOfBooks />
+    <CreateNewBook />
   </div>
 );
 export default Home;

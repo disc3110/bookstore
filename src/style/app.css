@@ -1,5 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --bubble-gum-pink: #ff5ab7;
+  --black: #1e1e1e;
+  --pinkish-grey: #c4c4c4;
+  --warm-grey: #888;
+  --black-two: #121212;
+  --white: #fff;
+  --dodger-blue: #379cf6;
+  --medium-blue: #307bbe;
+  --black-5: rgba(0, 0, 0, 0.05);
+  --azure: #0290ff;
+  --white-two: #fafafa;
+  --pale-grey: #f5f6fa;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white-two);
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  font-size: 100%;
+  background-color: var(--white-two);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
 }
