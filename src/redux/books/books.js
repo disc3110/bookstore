@@ -1,4 +1,3 @@
-/* eslint-disable arrow-body-style */
 /* eslint-disable no-console */
 /* eslint-disable camelcase */
 import axios from 'axios';
@@ -11,8 +10,6 @@ const baseURL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/book
 const initialState = [];
 
 export const addBook = (payload) => async (dispatch) => {
-  console.log('ive been called');
-  console.log(payload);
   const { item_id, title, category } = payload;
   try {
     const response = await axios.post(baseURL, { item_id, title, category });
