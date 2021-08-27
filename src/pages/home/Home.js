@@ -4,8 +4,8 @@ import ListOfBooks from '../../components/ListOfBooks';
 
 const Home = () => (
   <div>
-    <CreateNewBook />
     <ListOfBooks />
+    <CreateNewBook />
   </div>
 );
 export default Home;

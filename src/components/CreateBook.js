@@ -1,7 +1,9 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../redux/books/books';
+import '../style/addBook.css';
 
 const CreateNewBook = () => {
   const dispatch = useDispatch();
@@ -25,11 +27,17 @@ const CreateNewBook = () => {
   };
   return (
     <div>
-      <h3>Add a new Book</h3>
+      <h4>ADD NEW BOOK</h4>
       <form onSubmit={handleSubmit}>
-        <input ref={titleNew} label="Title" type="text" placeholder="Book title" />
-        <input ref={categoryNew} label="Category" type="text" placeholder="Book category" />
-        <input label="Create" type="submit" name="Create" value="Create" />
+        <input className="title-input" ref={titleNew} label="Title" type="text" placeholder="Book title" />
+        <input className="category-input" list="categories" ref={categoryNew} label="Category" type="text" placeholder="Category" />
+        <datalist id="categories">
+          <option value="Fantasy" />
+          <option value="Romance" />
+          <option value="Science fiction" />
+          <option value="Horror" />
+        </datalist>
+        <input className="submit-input" label="Create" type="submit" name="Create" value="Create" />
       </form>
     </div>
   );

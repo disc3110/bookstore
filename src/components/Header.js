@@ -1,6 +1,7 @@
 import React from 'react';
 import '../style/Header.css';
 import { NavLink } from 'react-router-dom';
+import userLogo from '../assets/user-solid.svg';
 
 const Header = () => {
   const links = [
@@ -30,12 +31,13 @@ const Header = () => {
 
   return (
     <header>
-      <h1> Bookstore </h1>
       <nav>
+        <h1> Bookstore CMS</h1>
         <ul>
           {createLinks()}
         </ul>
       </nav>
+      <img src={userLogo} alt="userLogo" />
     </header>
   );
 };

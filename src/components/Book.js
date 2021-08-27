@@ -2,6 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { removeBook } from '../redux/books/books';
+import '../style/book.css';
 
 const Book = (props) => {
   // eslint-disable-next-line camelcase
@@ -16,18 +17,29 @@ const Book = (props) => {
     dispatch(removeBook(item_id));
   };
   return (
-    <tr className="book">
-      <td>
-        {title}
-        {' '}
-        of
-        {' '}
-        {category}
-        {' '}
-        category
-      </td>
-      <td><button type="submit" className="btn btn-sm btn-danger" data-id="0" onClick={deleteBookFromStore}>Remove</button></td>
-    </tr>
+    <div className="book-container">
+      <div className="book-info">
+        <p>{category}</p>
+        <h1>{title}</h1>
+        <div>
+          <button type="button">Comments</button>
+          <button type="button" onClick={deleteBookFromStore}>Remove</button>
+          <button type="button">Edit</button>
+        </div>
+      </div>
+      <div className="book-chart">
+        <div className="pie" data-value="50" />
+        <div className="percentage">
+          <p>50%</p>
+          <h3>Completed</h3>
+        </div>
+      </div>
+      <div className="book-progress">
+        <h3>CURRENT CHAPTER</h3>
+        <p> Chapter 17 </p>
+        <button type="button">UPDATE PROGRESS</button>
+      </div>
+    </div>
   );
 };
 

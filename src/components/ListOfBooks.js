@@ -18,11 +18,9 @@ const ListOfBooks = () => {
     />
   ));
   return (
-    <table>
-      <tbody>
-        {renderBooks(books)}
-      </tbody>
-    </table>
+    <div className="book-collection">
+      {renderBooks(books)}
+    </div>
   );
 };
 
