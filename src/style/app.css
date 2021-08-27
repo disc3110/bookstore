@@ -24,6 +24,7 @@
 
 body {
   background-color: var(--white-two);
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -34,10 +35,6 @@ a {
 html {
   font-size: 100%;
   background-color: var(--white-two);
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
 }
 
 .container {
