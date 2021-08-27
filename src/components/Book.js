@@ -31,7 +31,7 @@ const Book = (props) => {
       <div className="book-chart">
         <Progress percentage="80" />
         <div className="percentage">
-          <p>50%</p>
+          <p>80%</p>
           <h3>Completed</h3>
         </div>
       </div>

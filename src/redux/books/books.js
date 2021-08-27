@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 /* eslint-disable no-console */
 /* eslint-disable camelcase */
 import axios from 'axios';
@@ -22,6 +23,7 @@ export const addBook = (payload) => async (dispatch) => {
   } catch (error) {
     console.log(error);
   }
+  return payload;
 };
 
 export const removeBook = (payload) => async (dispatch) => {
@@ -36,6 +38,7 @@ export const removeBook = (payload) => async (dispatch) => {
   } catch (error) {
     console.log(error);
   }
+  return payload;
 };
 
 export const getBooks = () => async (dispatch) => {
@@ -50,6 +53,7 @@ export const getBooks = () => async (dispatch) => {
       type: GET_BOOKS,
       payload: books,
     });
+    return books;
   } catch (error) {
     console.log(error);
   }

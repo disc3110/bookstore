@@ -34,7 +34,7 @@ const Progress = (props) => {
 };
 
 Progress.propTypes = {
-  percentage: PropTypes.number,
+  percentage: PropTypes.string,
 };
 
 Progress.defaultProps = {
