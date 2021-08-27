@@ -26,15 +26,15 @@ const CreateNewBook = () => {
     categoryNew.current.value = '';
   };
   return (
-    <div>
+    <div className="addBook">
       <h4>ADD NEW BOOK</h4>
       <form onSubmit={handleSubmit}>
-        <input className="title-input" ref={titleNew} label="Title" type="text" placeholder="Book title" />
-        <input className="category-input" list="categories" ref={categoryNew} label="Category" type="text" placeholder="Category" />
+        <input className="title-input input" ref={titleNew} label="Title" type="text" placeholder="Book title" />
+        <input className="category-input input" list="categories" ref={categoryNew} label="Category" type="text" placeholder="Category" />
         <datalist id="categories">
           <option value="Fantasy" />
           <option value="Romance" />
-          <option value="Science fiction" />
+          <option value="Sci-fi" />
           <option value="Horror" />
         </datalist>
         <input className="submit-input" label="Create" type="submit" name="Create" value="Create" />

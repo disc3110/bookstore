@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { removeBook } from '../redux/books/books';
 import '../style/book.css';
+import Progress from './chart';
 
 const Book = (props) => {
   // eslint-disable-next-line camelcase
@@ -28,7 +29,7 @@ const Book = (props) => {
         </div>
       </div>
       <div className="book-chart">
-        <div className="pie" data-value="50" />
+        <Progress percentage="80" />
         <div className="percentage">
           <p>50%</p>
           <h3>Completed</h3>

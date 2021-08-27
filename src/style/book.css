@@ -1,63 +1,47 @@
 .book-container {
-  width: 75rem;
-  height: 10.625rem;
-  margin: 2.313rem auto 0;
-  padding: 2rem 9.188rem 1.625rem 1.688rem;
-  border-radius: 4px;
+  padding: 2rem 9.188rem 1.75rem 1.688rem;
+  border-radius: 0.4rem;
   border: solid 1px #e8e8e8;
-  background-color: #fff;
+  background-color: var(--white);
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
+  max-height: 15rem;
 }
 
 .book-info {
   flex-grow: 0.5;
+  display: flex;
+  flex-direction: column;
 }
 
 .book-info h1 {
-  width: 12.313rem;
-  height: 1.813rem;
-  margin: 0.188rem 20.188rem 0 0;
-  font-family: RobotoSlab, serif;
+  margin: 0.188rem 0 0;
   font-size: 1.375rem;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.2px;
-  color: #121212;
+  color: var(--black-two);
 }
 
 .book-info p {
-  width: 3.063rem;
-  height: 1.125rem;
-  margin: 0 2.438rem 0 0;
+  margin: 0;
+  margin-bottom: 0.25rem;
   opacity: 0.5;
-  font-family: Montserrat, serif;
   font-size: 0.875rem;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #121212;
+  color: var(--black-two);
 }
 
 .book-info button {
-  width: 4.563rem;
-  height: 1.188rem;
   margin: 0.188rem 0.938rem 0.125rem 0;
-  font-family: RobotoSlab, serif;
+  padding-right: 1rem;
   font-size: 0.875rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #4386bf;
   border: none;
   cursor: pointer;
-  background-color: #fff;
+  background-color:transparent;
+  font-family: 'Roboto Slab', serif;
   border-right: solid 1px #e8e8e8;
 }
 
@@ -65,26 +49,24 @@
   display: flex;
 }
 
-.percentage p {
+.progress {
+  height: 4.25rem;
   width: 4.25rem;
+}
+
+.percentage p {
   height: 2.438rem;
-  margin: 1.23rem 5.75rem 0 2.688rem;
-  font-family: Montserrat, serif;
+  margin: auto 1.2rem;
+  font-family: 'Montserrat', serif;
   font-size: 2rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #121212;
 }
 
 h3 {
-  width: 7.875rem;
   height: 1.125rem;
-  margin: 0.063rem 5.375rem 0 2.688rem;
+  margin: auto 1.2rem;
   opacity: 0.5;
-  font-family: RobotoSlab, serif;
+  font-family: 'RobotoSlab', serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -93,65 +75,30 @@ h3 {
   letter-spacing: normal;
 }
 
+.book-progress h3 {
+  opacity: 0.5;
+  font-size: 0.813rem;
+  font-weight: 300;
+  color: var(--black-two);
+  margin-bottom: 0.4rem;
+}
+
 .book-progress p {
-  margin-left: 2.688rem;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: -0.4px;
+  color: var(--black-two);
+  margin-bottom: 1.4rem;
 }
 
 .book-progress button {
-  margin-left: 2.688rem;
-  margin-top: 1rem;
-  background-color: #4386bf;
-  width: 8.938rem;
-  height: 1.125rem;
-  font-family: RobotoSlab, serif;
-  font-size: 0.613rem;
+  border: none;
+  padding: 0.5rem 1.375rem;
+  border-radius: 3px;
+  background-color: var(--azure);
+  font-size: 0.813rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 0.5px;
   text-align: center;
   color: #fff;
-  border: none;
-  border-radius: 0.1rem;
-  padding: 0.2rem;
-  cursor: pointer;
-}
-
-.pie {
-  width: 4.25rem;
-  height: 4.25rem;
-  border-radius: 50%;
-  background: #eee;
-  background-image: linear-gradient(to right, transparent 50%, #4cc9d8 0);
-  position: relative;
-  display: inline-block;
-  margin: 10px;
-}
-
-.pie::before {
-  content: '';
-  display: block;
-  margin-left: 50%;
-  height: 100%;
-  border-radius: 0 100% 100% 0 / 50%;
-  transform-origin: left;
-  background-color: #4386bf;
-  /* stylelint-disable */
-  transform: rotate(attr(data-value)/100 - 0.5turn);
-  /* stylelint-enable */
-}
-
-.pie::after {
-  content: '';
-  position: absolute;
-  width: 80%;
-  height: 80%;
-  margin: auto;
-  border-radius: 50%;
-  background-color: #fff;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
 }

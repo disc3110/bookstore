@@ -3,7 +3,7 @@ import CreateNewBook from '../../components/CreateBook';
 import ListOfBooks from '../../components/ListOfBooks';
 
 const Home = () => (
-  <div>
+  <div className="container">
     <ListOfBooks />
     <CreateNewBook />
   </div>
