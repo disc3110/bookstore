@@ -9,7 +9,7 @@ const ListOfBooks = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getBooks());
-  }, []);
+  });
   const renderBooks = (bookCollection) => bookCollection.map((book) => (
     <Book
       key={book.item_id}
